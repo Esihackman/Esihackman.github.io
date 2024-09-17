@@ -1,0 +1,46 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 71px;
+    align-items: center;
+    background-color: rgb(49, 46, 46);
+    
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.text-white {
+    color:white;
+}
+
+.hero {
+    background-image: url(../images/hero-bg.png);
+    height: 100vh;
+    /* background-position: center; */
+    background-size: cover;
+    padding-top: 50px;
+}
+
+.title {
+    font-size: 60px;
+}
+.sub-title {
+    font-size: 16px;
+    text-decoration-color: #c843ff;
+}
+/*
+.hero-info {
+    width: 50%;
+    padding-top: 48px;
+    /* margin-top: 50px; */
+
+    .Me {
+        font-size: 20px;
+        text-decoration: #c843ff;
+    }
