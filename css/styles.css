@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -20,19 +24,34 @@ nav {
 }
 
 .hero {
-    background-image: url(../images/hero-bg.png);
-    height: 100vh;
-    /* background-position: center; */
-    background-size: cover;
+    background-image: url(../assets/images/image-1.jpeg);
+    height: 80vh;
+     background-position: center; 
+     /* background-size: cover;  */
     padding-top: 50px;
+    background-color: rgb(52, 49, 49);
+    /* color:#fff; */
+  /* font-size: 40px; */
+  /* padding: 20px; */
+  height: 100vh;
+  
+  /* width: 100%; */
+  background-size: 100%;
 }
 
-.title {
-    font-size: 60px;
+.name {
+    font-size: 50px;
+    color: #c5baca;
 }
-.sub-title {
-    font-size: 16px;
-    text-decoration-color: #c843ff;
+.what-do {
+    font-size: 90px;
+    font-weight:bold ;
+    color: #c5baca;
+}
+
+.skills {
+    font-size: 20px; 
+    color: white;
 }
 /*
 .hero-info {
