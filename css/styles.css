@@ -124,23 +124,21 @@ section h1 {
   background-color: black;
   /* color:rgb(45, 2, 45); */
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   width: 100%;
    /* padding-left: 60px;
    margin-: 80px;
    padding-bottom: 80px;   */
    align-items: center;
-   padding: 5%;
+   padding: 2%;
 }
 
 
 /* Typewriter effect */
 #typewriter-text {
   border-right: 2px solid white;
-  font-family: "Courier New", Courier, monospace;
   white-space: nowrap;
   /* overflow: hidden; */
-  display: inline-block;
   width: 0;
   animation: blink-caret 0.75s step-end infinite;
 }
