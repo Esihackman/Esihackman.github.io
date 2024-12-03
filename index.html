@@ -5,212 +5,339 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
-     <script defer src="./scripts/portfolio.js"></script> 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="./scripts/portfolio.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
+
+        .footer-section {
+            padding: 20px;
+            background-color: #007BFF; /* Theme color for the footer background */
+            color: white; /* White text color */
+            text-align: center; /* Center the text */
+        }
+
+        .footer-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between contact and newsletter */
+            align-items: center; /* Align items vertically */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            margin-bottom: 20px; /* Space below the container */
+        }
+
+        .footer-contact, .footer-newsletter {
+            flex: 1; /* Allow both sections to grow equally */
+            margin: 10px; /* Space around each section */
+        }
+
+        .footer-contact h3, .footer-newsletter h3 {
+            margin-bottom: 10px; /* Space below the heading */
+        }
+
+        .footer-newsletter form {
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center the form elements */
+            align-items: center; /* Align items vertically */
+        }
+
+        .footer-newsletter input[type="email"] {
+            padding: 10px;
+            margin-right: 10px; /* Space between input and button */
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .footer-newsletter button {
+            padding: 10px 20px;
+            border: none; /* Remove default border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #0056b3; /* Darker shade of theme color for button */
+            color: white; /* White text color */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .footer-newsletter button:hover {
+            background-color: #004494; /* Even darker shade on hover */
+        }
+
+        .footer-bottom {
+            padding: 10px;
+            background-color: #0056b3; /* Darker shade for footer bottom */
+            color: white; /* White text color */
+        }
+
+        .footer-bottom p {
+            margin: 0; /* Remove default margin */
+        }
+
+        .footer-links {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+            margin: 10px 0 0; /* Space above the links */
+        }
+
+        .footer-links li {
+            display: inline; /* Display links inline */
+            margin: 0 15px; /* Space between links */
+        }
+
+        .footer-links a {
+            color: white; /* White text color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
 </head>
 <body>
-        <!-- Off-canvas sidebar -->
-        <nav id="sidebar" class="off-canvas">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Ml.Hackman</h1>
             <ul class="nav-links">
                 <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#about-me"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="#about-me"><i class="fas fa-info-circle"></i> About Me</a></li>
                 <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="#services"><i class="fas fa-envelope"></i> services</a></li>
             </ul>
-    
-            <!-- Social Media Icons -->
-            <ul class="social-icons">
-                <li><a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://plus.google.com/yourprofile" target="_blank"><i class="fab fa-google"></i></a></li>
-            </ul>
-        </nav>
-    
-        <!-- Main content -->
-        <nav id="navbar">
-            <!-- Menu Button -->
-             <button id="menu-toggle"><i class="fas fa-bars">Menu</i></button> 
-            <!-- <span id="menuToggle" onclick="openNav()">&#9776; Menu</span> -->
-            <span class="nav-bar-right">Ml. Hackman</span>
-        </nav>
-        
-
         </div>
-            <!-- Sections -->
-            <section class="home">
-               
-                <div  class="text">
-                <h1>Hello I'm Mabel !</h1>
-                <h1>A Web Developer</h1>
-                <p class="intro"><span id="typewriter-text"></span></p>
-                <!-- <p>Solution-oriented mindset, problem-solving enthusiasm,<br> positive attitude towards challenges, overcoming obstacles with enthusiasm .</p> -->
+    </nav>
+   
+    <section id="home" class="home">
+        <div class="text">
+            <h1>Hello I'm Mabel!</h1>
+            <h1>A Web Developer</h1>
+            <p class="intro"><span id="typewriter-text"></span></p> 
+            <button class="my-button">Let Get Connected</button>
+            <button class="download">Download CV</button>
+        </div>
+        <div class="my-image">
+            <img src="./assets/images/MH.jpg">
+        </div> 
+    </section>
 
-                <button class="my-button">Let Get Connected</button>
-                <button class="download">Download CV</button>
+    <section id="about-me" class="about-me">
+        <div class="about-image">
+            <img src="./assets/images/image-1.jpeg" alt="my picture">
+        </div>
+        <div class="about-content">
+            <h1>About Me</h1>
+            <div class="about-text">
+                <p>Hello! I'm a Professional Web Developer, Providing awesome cool design stuff for my clients. My vision is to satisfy my client.</p>
+                <p>I have a solution-oriented mindset, problem-solving enthusiasm, positive attitude towards challenges, overcoming obstacles with enthusiasm. I love to code.</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            </div>
+            <button class="button-me">Hire Me</button>
+        </div>
+    </section>
+    
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills">
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">HTML</span>
+                    <div class="skill-percentage">
+                        <h1 id="skillOne" class="skill-number">0</h1>
+                        <span>%</span>
+                    </div>
                 </div>
-                <!-- <div class="my-image">
-                    <img src="./assets/images/MH.jpg" alt="my picture">
-                    </div> -->
-                   
-            </section>
-    
-            <!-- <section class="about"> -->
-                <!-- <p>There are many variations of passages of Lorem Ipsum available,<br>but the majority have suffered alteration in some form, by injected humour,<br> or randomised words which don't look even slightly believable.<br> If you are going to use a passage of Lorem Ipsum.</p> -->
-            
-            <!-- </section> -->
-    
-            <section class="about-me">
-                 <div>
-                    <img src="./assets/images/image-1.jpeg" alt="my picture"> 
-                </div>
-
-                <div>
-
-                <h1>About Me</h1>
-                <p>Hello ! I'm a Professional Web Developer, Providing awesome cool<br> design stuff for my clients. My vision is to satisfy my client.</p>
-                    <p> I have a solution-oriented mindset, problem-solving<br>enthusiasm, positive attitude towards challenges,<br> overcoming obstacles with enthusiasm .I love to code.</p>
-                    <p> It is a long established fact that a reader will be distracted<br> by the readable content of a page when looking at its layout.</p>
-
-
-                    <button class="button-me">Hire Me</button>
-                  </div>
-                 
-                  
-                 
-                
-                
-            </section>
-    
-            <section class="skills">
-                <h1>Skills</h1>
                 <div class="wavy-div">
-                 <div class="box">
-                    <div class="content">
-                        
-                        <h2>HTML</h2>
-                       
-                        <p><i class="fa-regular fa-circle-check"></i></p>
-                        <p>t's the foundation of web pages. HTML defines the structure and layout of content on the web, using elements like headings, paragraphs, links, and images. It's responsible for the "skeleton" of a web page.
-                        </p>
-                        
-                    </div>
-                 </div>
-                 <div class="box">
-                    <div class="content">
-                        <h2>CSS</h2>
-                        <P><i class="fa-regular fa-circle-check"></i></P>
-                        <p>CSS is used to style and layout HTML elements. It controls the appearance of the web page, including colors, fonts, spacing, and responsiveness (how the page adapts to different devices like mobile phones or desktops)</p>
-                    </div>
-                 </div>
                     <div class="box">
                         <div class="content">
-                            <h2>JAVASCRIPT</h2>
-                            <p><i class="fa-regular fa-circle-check"></i></p>
-                            <p>JavaScript is a programming language that brings interactivity to a web page. It's used to create dynamic content, such as image sliders, form validation, or real-time updates without refreshing the page (as seen in web applications).</p>
+                            <i class="fab fa-html5"></i>
+                            <div class="progress-circle" data-value="90">
+                                <div class="progress-circle-bar">
+                                    <div class="progress-circle-value"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <svg>
-            <filter id="wavy">
-                <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="2"></feTurbulence>
-                <animate atttributeName="baseFrequency" dur="60s" values="0.2;0.05;0.02" repeatCourt="indefinite"/>
-                <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
-            </filter>
-            </svg>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">CSS</span>
+                    <div class="skill-percentage">
+                        <h1 id="skillTwo" class="skill-number">0</h1>
+                        <span>%</span>
+                    </div>
+                </div>
+                <div class="wavy-div">
+                    <div class="box">
+                        <div class="content">
+                            <i class="fab fa-css3-alt"></i>
+                            <div class="progress-circle" data-value="85">
+                                <div class="progress-circle-bar">
+                                    <div class="progress-circle-value"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-percentage">
+                        <h1 id="skillThree" class="skill-number">0</h1>
+                        <span>%</span>
+                    </div>
+                </div>
+                <div class="wavy-div">
+                    <div class="box">
+                        <div class="content">
+                            <i class="fab fa-js"></i>
+                            <div class="progress-circle" data-value="80">
+                                <div class="progress-circle-bar">
+                                    <div class="progress-circle-value"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">React</span>
+                    <div class="skill-percentage">
+                        <h1 id="skillFour" class="skill-number">0</h1>
+                        <span>%</span>
+                    </div>
+                </div>
+                <div class="wavy-div">
+                    <div class="box">
+                        <div class="content">
+                            <i class="fab fa-react"></i>
+                            <div class="progress-circle" data-value="75">
+                                <div class="progress-circle-bar">
+                                    <div class="progress-circle-value"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">Next.js</span>
+                    <div class="skill-percentage">
+                        <h1 id="skillFive" class="skill-number">0</h1>
+                        <span>%</span>
+                    </div>
+                </div>
+                <div class="wavy-div">
+                    <div class="box">
+                        <div class="content">
+                            <i class="fab fa-react"></i>
+                            <div class="progress-circle" data-value="70">
+                                <div class="progress-circle-bar">
+                                    <div class="progress-circle-value"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact" class="contact-section">
+        <h3>Contact Info</h3>
+        <p>+233557721602</p>
+        <p>+233201653254</p>
+    </section> -->
+
+    <section class="services">
+        <h1 class="services-title">My Services</h1>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Front-End Development</h3>
+                    <p>Creating responsive and interactive user interfaces using HTML, CSS, and JavaScript. Specializing in modern frameworks and pixel-perfect designs.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Web Design</li>
+                        <li><i class="fas fa-check"></i> Interactive UI/UX</li>
+                        <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                    </ul>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Back-End Development</h3>
+                    <p>Building robust server-side applications with secure databases and efficient APIs. Expert in Python, PHP, and database management.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> API Development</li>
+                        <li><i class="fas fa-check"></i> Database Design</li>
+                        <li><i class="fas fa-check"></i> Server Management</li>
+                    </ul>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="service-content">
+                    <h3>Full-Stack Development</h3>
+                    <p>End-to-end web application development combining front-end and back-end expertise for complete digital solutions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Complete Web Apps</li>
+                        <li><i class="fas fa-check"></i> System Architecture</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    </ul>
+                    <a href="#" class="service-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>Phone: +233557721602</p>
+                <p>Email: <a href="mailto:your-email@example.com" class="email-link">your-email@example.com</a></p> <!-- Replace with your actual email -->
+            </div>
+
+            <div class="footer-newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button> 
+                </form>
+            </div>
         </div>
 
-        
-        
-          <h1>Developer Roles</h1>
-          <div class="container">
-            <!-- Front-End Developer Card -->
-            <div class="developer-card">
-              <img src="https://via.placeholder.com/300x200?text=Front-End+Developer" alt="Front-End Developer">
-              <h3>Front-End Developer</h3>
-              <p>Responsible for the visual and interactive parts of a website, working with HTML, CSS, and JavaScript.</p>
-            </div>
-        
-            <!-- Back-End Developer Card -->
-            <div class="developer-card">
-              <img src="https://via.placeholder.com/300x200?text=Back-End+Developer" alt="Back-End Developer">
-              <h3>Back-End Developer</h3>
-              <p>Handles the server, database, and application logic, working with languages like Python, PHP, and databases.</p>
-            </div>
-        
-            <!-- Full-Stack Developer Card -->
-            <div class="developer-card">
-              <img src="https://via.placeholder.com/300x200?text=Full-Stack+Developer" alt="Full-Stack Developer">
-              <h3>Full-Stack Developer</h3>
-              <p>A hybrid role handling both front-end and back-end development tasks.</p>
-            </div>
-          </div>
-        
-        </body>
-        </html>
-        
-    
-            <footer class="footer">
-                <div class="footer-container">
-                    <!-- Follow Me Section -->
-                    <div class="footer-section follow-me">
-                        <h3>Follow Me</h3>
-                        <ul class="social-icons">
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fab fa-github"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google"></i></a></li>
-                        </ul>
-                    </div>
-            
-                    <!-- Contact Info Section -->
-                    <div class="footer-section contact-info">
-                        <h3>Contact Info</h3>
-                        <p>+233557721602</p>
-                        <p>+233201653254</p>
-                    
-                    </div>
-                   
-                    <!-- Newsletter Section -->
-                     
-                    <div class="footer-section newsletter">
-                        <h3>Newsletter</h3>
-                        <form action="#">
-                            <input type="email" placeholder="Email Address">
-                             <button type="submit">Subscribe</button> 
-                        </form>
-                    </div>
-                </div>
-            
-                <!-- Copyright Section -->
-                <div class="footer-bottom">
-                    <p>&copy; 2024 Portfx. All rights reserved.</p>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </footer>
-            
-        
-    
-        
-    </body>
-    </html>
-    
-      
-        
-   
-    
-    
-     
-    
-    
-
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
