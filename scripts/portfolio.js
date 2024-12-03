@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function() {
         // Animate circular progress
         document.querySelectorAll('.progress-circle').forEach(circle => {
           const value = circle.getAttribute('data-value');
-          const progressValue = circle.querySelector('.progress-circle-value');
-          progressValue.style.transform = `rotate(${value * 3.6}deg)`;
+          const percentageText = circle.querySelector('.progress-circle-value');
+          percentageText.textContent = `${value}%`; // Set the text to the value
         });
 
         // Animate numbers
@@ -71,7 +71,7 @@ let elements = [
   { id: "#skillTwo", start: 0, end: 93, duration: 4000 },
   { id: "#skillThree", start: 0, end: 87, duration: 4000 },
   { id: "#skillFour", start: 0, end: 85, duration: 4000 },
-  { id: "#skillFive", start: 0, end: 75, duration: 4000 },
+  { id: "#skillFive", start: 0, end: 45, duration: 4000 },
   { id: "#skillSix", start: 0, end: 60, duration: 4000 },
 ];
 
