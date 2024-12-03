@@ -1253,3 +1253,31 @@ body {
     color: #3b0b5a; /* Darker shade on hover */
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
+
+.footer-social {
+    margin-top: 20px; /* Space above the social links */
+}
+
+.social-link {
+    color: #460e70; /* Your theme color */
+    font-size: 1.5rem; /* Size of the icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-link:hover {
+    color: #3b0b5a; /* Darker shade on hover */
+}
+
+.social-icons {
+    margin-top: 20px; /* Space above the social icons */
+}
+
+.social-link {
+    color: #460e70; /* Your theme color */
+    font-size: 1.5rem; /* Size of the icons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-link:hover {
+    color: #3b0b5a; /* Darker shade on hover */
+}
